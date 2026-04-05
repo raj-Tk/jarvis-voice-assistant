@@ -1,15 +1,10 @@
-$(document).ready(function () {
-    
 $('.text').textillate({
     loop: true,
     sync: true,
-    in:{
-        effect: "animate_bounceIn",
+    in: {
+        effect: "animate__bounceIn"
     },
-
-    out:{
-        effect: "animate_bounceOut",
-    },
-});
-
+    out: {
+        effect: "animate__bounceOut"
+    }
 });
