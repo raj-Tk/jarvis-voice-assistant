@@ -11,6 +11,18 @@ $('.text').textillate({
 
 $(document).ready(function () {
 
+    // TEXT animation
+    $('.text').textillate({
+        loop: true,
+        in: {
+            effect: "bounceIn"
+        },
+        out: {
+            effect: "bounceOut"
+        }
+    });
+
+    // Siri wave
     var siriWave = new SiriWave({
         container: document.getElementById("siri-container"),
         width: 800,
@@ -21,17 +33,16 @@ $(document).ready(function () {
         autostart: true,
     });
 
-    // siri message animation
+    // Siri message animation
     $('.siri-message').textillate({
         loop: true,
-        sync: true,
         in: {
-            effect: "animate__fadeInUp",
+            effect: "fadeInUp",
             sync: true,
         },
         out: {
-            effect: "animate__fadeOutUp",
-            sync: true,
+            effect: "fadeOutUp",
+             sync: true,
         }
     });
 
