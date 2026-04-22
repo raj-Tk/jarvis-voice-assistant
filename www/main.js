@@ -46,4 +46,10 @@ $(document).ready(function () {
         }
     });
 
+    // mic button click
+    $("#MicBtn").click(function () {
+        $("#oval").prop("hidden", true);
+        $("#siriWave").prop("hidden", false);
+    });
+
 });
