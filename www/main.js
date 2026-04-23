@@ -48,8 +48,10 @@ $(document).ready(function () {
 
     // mic button click
     $("#MicBtn").click(function () {
+        eel.playAssistantSound()
         $("#oval").prop("hidden", true);
         $("#siriWave").prop("hidden", false);
+        eel.takecommand()()
     });
 
 });
