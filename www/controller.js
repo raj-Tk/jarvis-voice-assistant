@@ -4,18 +4,23 @@ $(document).ready(function () {
     eel.expose(DisplayMessage);
 
     function DisplayMessage(message) {
-        // Replace the hidden textillate <li>
         $(".siri-message").text(message);
-        $(".siri-message").textillate('start');
+        $(".siri-message").textillate('stop');
+        $(".siri-message").textillate({
+            loop: false,
+            in: {
+                effect: "animate__fadeInUp",
+                sync: true
+            }
+        });
     }
 
+    // Display hood
+    eel.expose(ShowHood);
 
-     // Display hood
-    eel.expose(ShowHood)
     function ShowHood() {
         $("#oval").prop("hidden", false);
-       $("#siriWave").prop("hidden", true);
+        $("#siriWave").prop("hidden", true);
     }
-
 
 });

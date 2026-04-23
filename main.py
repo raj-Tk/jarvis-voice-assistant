@@ -9,7 +9,7 @@ eel.init("www")
 # 🔹 Function first
 def playAssistantSound():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    music_dir = os.path.join(base_dir, "www", "assets", "vendore", "textillate", "audio", "start_sound.mp3")
+    music_dir = os.path.join(base_dir, "www", "assets", "vendore", "textillate", "audio", "start_sound_1.mp3")
     
     playsound(music_dir)
 
