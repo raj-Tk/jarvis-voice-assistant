@@ -21,7 +21,7 @@ def openCommand(query):
     query =query.lower()
 
     if query!="":
-        speak("Opening"+query)
+        speak("Opening "+query)
         os.system('start ' +query)
     else:
         speak("not found")
